@@ -1,0 +1,56 @@
+* {
+    margin: auto;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 3px solid;
+}
+
+#blank {
+    padding: 5px;
+}
+
+#header {
+    background-color: green;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-weight: lighter;
+}
+
+#nav_bar td {
+    border-left: none;
+    border-right: none;
+    border-top: thick solid;
+    border-bottom: thick solid;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+
+a:active {
+    color: purple;
+}
+
+#iframe_container {
+    text-align: center;
+}
+
+iframe {
+    padding: 20px;
+    width: 90%;
+    height: 500px;
+}
+

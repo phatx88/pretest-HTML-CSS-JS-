@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration_page</title>
+    <link rel="stylesheet" href="../pretest/css/registration.css">
+    <script src="../pretest/js/registration.js"></script>
+</head>
+
+<body>
+    <form name="myform" method="POST">
+        <table border="1">
+            <thead>
+                <tr id="header">
+                    <td colspan="2">
+                        <h1>Member Information</h1>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="name">Full name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="name" id="name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Gender</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" value="Male" id="gender" required>Male
+                        <input type="radio" name="gender" value="Female" id="gender" required>Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="hobbies">Hobbies</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="hobbies" value="Shopping" id="hobbies" required>Shopping
+                        <input type="radio" name="hobbies" value="Eating out" id="hobbies" required>Eating out
+                        <input type="radio" name="hobbies" value="Sporting" id="hobbies" required>Sporting
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Dob">Date of Birth</label>
+                    </td>
+                    <td>
+                        <input type="date" name="Dob" id="Dob" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address">Address</label>
+                    </td>
+                    <td>
+                        <input type="text" name="address" id="address" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone">Phone Number</label>
+                    </td>
+                    <td>
+                        <input type="tel" name="phone" id="phone" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="city">City</label>
+                    </td>
+                    <td>
+                        <select name="city" id="select_city" required>
+                            <option value="none">---Select---</option>
+                            <option value="Saigon">Saigon</option>
+                            <option value="Hue">Hue</option>
+                            <option value="Hanoi">Hanoi</option>
+                            <option value="Danang">Danang</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="comment">Comment</label>
+                    </td>
+                    <td>
+                        <textarea name="comment" id="comment_box" cols="50" rows="7"></textarea>
+                    </td>
+                </tr>
+            </tbody>
+            <tr id="footer">
+                <td colspan="2">
+                    <input type="submit" id="submit_btn" value="Submit" onclick="store()">
+                    <input type="reset" id="reset_btn" value="Reset">
+                </td>
+            </tr>
+        </table>
+</body>
+</form>
+
+</html>
